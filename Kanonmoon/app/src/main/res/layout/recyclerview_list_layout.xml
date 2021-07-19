@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/recyclerview_india"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/flag_id"
+        />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:text="India"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/country_id"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="New Delhi"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/capital_id"
+        />
+
+
+
+</LinearLayout>

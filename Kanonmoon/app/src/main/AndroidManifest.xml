@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kanon.kanonmoon">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".LogoPage"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="SettingColor"
+            android:parentActivityName=".Menu"
+            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.AS1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Menu"></meta-data>
+        </activity>
+
+        <activity
+            android:name=".Method"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Gesture"
+            android:label="Gesture"
+            android:parentActivityName=".Menu">
+            <intent-filter>
+                <action android:name="android.intent.action.AS3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Menu"></meta-data>
+        </activity>
+
+        <activity
+            android:name=".MoveButton"
+            android:label="@string/app_name"
+            android:parentActivityName=".Menu">
+            <intent-filter>
+                <action android:name="android.intent.action.AS4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Menu"></meta-data>
+        </activity>
+
+        <activity
+            android:name=".Submit_Tab_Test"
+            android:label="@string/app_name"
+            android:parentActivityName=".Menu">
+            <intent-filter>
+                <action android:name="android.intent.action.AS6" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Menu"></meta-data>
+        </activity>
+
+        <activity
+            android:name=".FileReadWrite"
+            android:label="@string/app_name"
+            android:parentActivityName=".Menu">
+            <intent-filter>
+                <action android:name="android.intent.action.AS7" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Menu"></meta-data>
+        </activity>
+
+        <activity
+            android:name=".Calculator"
+            android:label="@string/app_name"
+            android:parentActivityName=".Menu"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.AS8" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Menu"></meta-data>
+        </activity>
+
+        <activity
+            android:name=".ReadFile01"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS9" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ReadFile02"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS10" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".StringArray"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS11" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".StringArray2"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS12" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".EnglishTest"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS15" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Notification"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS16" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DataSend1"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS17" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DataSend2"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS18" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SpinnerTest"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS19" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ListViewTest"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS20" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PopupMenuTest"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS21" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".WidgetTest"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS22" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SQL_Home"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS23" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SQL_Add"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS24" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SQL_ListView"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS25" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DifferentLanguage"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AS26" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ActionReturnBar"
+            android:label="HomePage"
+            android:parentActivityName=".Menu">
+            <intent-filter>
+                <action android:name="android.intent.action.AS27" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Menu"></meta-data>
+        </activity>
+
+        <activity
+            android:name=".ActionReturnPage1"
+            android:label="Page1"
+            android:parentActivityName=".ActionReturnBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActionReturnBar"></meta-data>
+        </activity>
+
+        <activity
+            android:name=".ActionReturnPage2"
+            android:label="Page2"
+            android:parentActivityName=".ActionReturnPage1"></activity>
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".ActionReturnPage1"></meta-data>
+
+        <activity
+            android:name=".AsyncDownload"
+            android:label="AsyncDownload">
+            <intent-filter>
+                <action android:name="android.intent.action.AS28" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SwipeViewTest1"
+            android:label="SwipeViewTest">
+            <intent-filter>
+                <action android:name="android.intent.action.AS29" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SwipeViewImage"
+            android:label="SwipeViewImage">
+            <intent-filter>
+                <action android:name="android.intent.action.AS30" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Recyclerview"
+            android:label="Recyclerview">
+            <intent-filter>
+                <action android:name="android.intent.action.AS31" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MSSQL_Search"
+            android:label="MSSQL Search">
+            <intent-filter>
+                <action android:name="android.intent.action.AS33" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MSSQL_Spinner"
+            android:label="MSSQL Spinner">
+            <intent-filter>
+                <action android:name="android.intent.action.AS34" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MSSQL_UploadImage"
+            android:label="MSSQL UploadImage">
+            <intent-filter>
+                <action android:name="android.intent.action.AS35" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MSSQL_ShowImage"
+            android:label="MSSQL ShowImage">
+            <intent-filter>
+                <action android:name="android.intent.action.AS36" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MSSQL_Login"
+            android:label="MSSQL Login">
+            <intent-filter>
+                <action android:name="android.intent.action.AS37" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

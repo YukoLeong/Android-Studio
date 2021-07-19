@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/engword1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="105dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/engword2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/engword1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp" />
+
+        <TextView
+            android:id="@+id/engword3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/engword2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="50dp" />
+
+        <Button
+            android:id="@+id/buttonleft"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="leftclick"
+            android:text="Previous"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/buttonshow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="showclick"
+            android:text="Show"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/buttonright"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/buttonshow"
+            android:onClick="rightclick"
+            android:text="Next"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/wordxx"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonshow"
+            android:layout_alignStart="@+id/buttonshow"
+            android:layout_alignTop="@+id/textView6"
+            android:gravity="center"
+            android:text="abc" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="/" />
+
+        <TextView
+            android:id="@+id/wordyy"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/buttonshow"
+            android:layout_alignRight="@+id/buttonshow"
+            android:layout_alignTop="@+id/textView6"
+            android:gravity="center"
+            android:text="abc" />
+
+    </RelativeLayout>
+</LinearLayout>

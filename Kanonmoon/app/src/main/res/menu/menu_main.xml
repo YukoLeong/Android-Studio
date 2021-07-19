@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+    <item
+        android:id="@+id/mmred"
+        android:icon="@drawable/search_32"
+        android:orderInCategory="1"
+        android:title="@string/Itemred"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mmgreen"
+        android:icon="@drawable/social_32"
+        android:orderInCategory="2"
+        android:title="@string/Itemgreen"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mmyellow"
+        android:icon="@drawable/question_32"
+        android:orderInCategory="3"
+        android:title="@string/Itemyellow"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mmjump"
+        android:icon="@drawable/fb_32"
+        android:orderInCategory="4"
+        android:title="@string/Itemjump"
+        app:showAsAction="ifRoom" />
+    <!--item圖案好像只可以容納3個..-->
+</menu>

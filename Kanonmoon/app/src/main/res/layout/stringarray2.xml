@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:id="@+id/bleft"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="bleftclick"/>
+
+        <Button
+            android:id="@+id/bright"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="brightclick"
+            android:text="Next" />
+
+        <Button
+            android:id="@+id/bshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="bshowclick"
+            android:text="Answer" />
+
+        <TextView
+            android:id="@+id/tvpresentindex_xx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bshow"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/bshow"
+            android:text="abc" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="/" />
+
+        <TextView
+            android:id="@+id/tvtotallength_yy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/bshow"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/bshow"
+            android:text="abc" />
+
+        <TextView
+            android:id="@+id/tvquestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvpresentindex_xx"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="83dp" />
+
+        <TextView
+            android:id="@+id/tvanswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvquestion"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="66dp" />
+    </RelativeLayout>
+</LinearLayout>
